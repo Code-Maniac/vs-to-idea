@@ -35,8 +35,8 @@ def main():
 
     # create the .idea dir and write the misc.xml file
     os.mkdir(idea_dir)
-    with open(idea_dir + "/misc.xml", "w") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<project version="4">\n  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />\n</project>')
+    # with open(idea_dir + "/misc.xml", "w") as f:
+    #     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<project version="4">\n  <component name="CMakeWorkspace" PROJECT_DIR="$ProjectFileDir$" />\n</project>')
 
     print(cmake_path)
     if create_cmake(cmake_path, idea_dir + "/cmake.xml"):
